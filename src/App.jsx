@@ -22,8 +22,11 @@ export default function App() {
         );
     }
     return (
-      <div className="cards">
-        <ProfileCard userData={userData} />
-      </div>
+      <>
+        <h1>Kişi Listesi</h1>
+        <div className="cards">
+          <ProfileCard userData={userData} />
+        </div>
+      </>
     );
 };

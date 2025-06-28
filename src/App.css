@@ -47,11 +47,16 @@
   font-weight: 400;
   font-size: 14px;
   color: #e4e2e2;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
-.userInfo .userName{
+
+.userInfo .userName {
   font-size: 18px;
   font-weight: 700;
 }
+
 .userInfo:before {
   content: "";
   border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -95,6 +100,18 @@
 @media screen and (max-width:991.98px) {
   .card {
     width: 100%;
+    padding: 20px 16px;
+  }
+
+}
+
+@media screen and (max-width:570px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .userInfo a:after {
+    display: none;
   }
 }
 
